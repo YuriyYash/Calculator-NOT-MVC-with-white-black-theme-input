@@ -1,0 +1,164 @@
+html {
+  background: white;
+}
+
+body {
+  font-size: 64px;
+  background-color: black;
+}
+
+button {
+  font-size: 26px;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 80px 80px 80px 80px;
+  grid-template-rows: 80px 80px;
+  grid-template-areas: 
+  "header header header header" 
+  "main main main main" 
+  "main main main main" 
+  "main main main main" 
+  "main main main main" 
+  "main main main main";
+}
+
+.white .container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 80px 80px 80px 80px;
+  grid-template-rows: 80px 80px;
+  grid-template-areas: 
+  "header header header header" 
+  "main main main main" 
+  "main main main main" 
+  "main main main main" 
+  "main main main main" 
+  "main main main main";
+  background: white;
+}
+
+.item-header {
+  grid-area: header;
+  color: white;
+}
+
+.white .item-header {
+  grid-area: header;
+  color: black;
+}
+
+#globalAnswer {
+  background-color: black;
+  font-size: 1px;
+}
+
+.white #globalAnswer {
+  background-color: white;
+  font-size: 1px;
+}
+
+#currentValue {
+  background-color: black;
+  grid-column-start: 1;
+  grid-column-end: span 4;
+  text-align: right;
+}
+
+.white #currentValue {
+  background-color: white;
+  grid-column-start: 1;
+  grid-column-end: span 4;
+  text-align: right;
+}
+
+button.btn {
+  background-color: dimgray;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin: 4px 2px;
+  border-radius: 50%;
+}
+
+.white button.btn {
+  background-color: rgb(227, 227, 227);
+  border: none;
+  color: rgb(5, 5, 5);
+  padding: 20px;
+  text-align: center;
+  margin: 4px 2px;
+  border-radius: 50%;
+}
+
+.white button.btn:focus {
+  background-color: rgb(206, 206, 206);
+}
+
+button.orange {
+  background-color: orange;
+}
+
+.white button.orange {
+  background-color: orange;
+  
+}
+
+button.orange:focus {
+  background-color: white;
+  color: gold
+}
+
+.white button.orange:focus {
+  background-color: rgb(233, 178, 136);
+  color: black;
+}
+
+button.silver {
+  background-color: silver;
+  color: black;
+}
+
+.white button.silver {
+  background-color: rgb(136, 132, 132);
+  color: white;
+}
+
+button.silver:focus {
+  background-color: white;
+  color: black
+}
+
+button.equals {
+  background-color: orange;
+}
+
+button.equals:focus {
+  background-color: white;
+  color: gold
+}
+
+.white #equals_color {
+  background-color: orange;
+}
+
+button.zero {
+  text-align: left;
+  padding-left: 32px;
+  grid-row: 6;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  border-radius: 50px;
+}
+
+.white button.zero {
+  text-align: left;
+  padding-left: 32px;
+  grid-row: 6;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  border-radius: 50px;
+}
